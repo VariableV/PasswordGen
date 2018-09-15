@@ -1,0 +1,35 @@
+<!--
+author: Maheen Hussain
+-->
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet">
+		<script src="{{ url_for('static', filename='handle.js') }}"></script>
+	</head>
+
+	<!--
+	CSS Styling from:
+	https://tympanus.net/codrops/2015/01/08/inspiration-text-input-effects/
+	-->
+	<section class="content bgcolor-4">
+		<h1>Password Generator Project</h1>
+		<span class="input input--kyo">
+			<input class="input__field input__field--kyo" type="text" id="textOne" />
+			<label class="input__label input__label--kyo" for="textOne">
+				<span class="input__label-content input__label-content--kyo">Website Name</span>
+			</label>
+		</span>
+		<span class="input input--kyo">
+			<input class="input__field input__field--kyo" type="text" id="textTwo" readonly/>
+			<label class="input__label input__label--kyo" for="textTwo">
+				<span class="input__label-content input__label-content--kyo">Generated Password</span>
+			</label>
+		</span>
+	</section>
+	<p>
+		Project by Maheen Hussain and Isidro Martinez
+		<br>
+		<strong>Algorithm information can be found</strong> <a href="https://docs.google.com/presentation/d/10HxKnU2FUFrw0AENNvbZCR52CL4C-CT61RiUViYANF4/edit?usp=sharing">here</a>
+	</p>
+</html>
